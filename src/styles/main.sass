@@ -1,0 +1,289 @@
+html, body
+  margin: 0
+  padding: 0
+
+// Colors
+$we-green: #70bd99
+$we-sky: #d4eaeb
+$we-beige: #f7f6ee
+$we-yellow: #fcc941
+$we-orange: #ea5d13
+$we-black: #373736
+
+// Additional colors
+$we-beige: #ada89f
+$we-beige: #686763
+
+// Fonts
+h1, h2, h3, h4, h5, h6, p, a
+  font-family: 'Lato', sans-serif
+
+h1
+  font-size: 42px
+  line-height: 38px
+  font-weight: 300
+  text-transform: uppercase
+
+h2
+  font-family: 'Neucha', cursive
+  font-size: 34px
+  line-height: 38px
+  text-transform: uppercase
+
+p
+  font-size: 18px
+  line-height: 28px
+  font-weight: 300
+
+// Header
+header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  width: 930px
+  margin: 15px auto 0
+  padding: 0 22px
+
+  #logo
+    display: inline-block
+    width: 202px
+    height: 83px
+    margin-right: 22px
+    background: url('../img/logo.png') no-repeat
+
+  #search
+    display: inline-block
+    position: absolute
+    right: 40px
+    top: 35px
+
+    &::after
+      content: ''
+      position: absolute
+      background: url('../img/loupe.png') no-repeat
+      height: 18px
+      width: 18px
+
+  nav
+    display: inline-block
+    position: relative
+    top: -35px
+
+  ul
+    margin: 0
+    padding: 0
+
+  ul>li
+    display: inline-block
+
+    a
+      position: relative
+      text-transform: uppercase
+      text-decoration: none
+      margin-right: 16px
+      font-size: 16px
+      line-height: 83px
+      font-weight: 400
+      color: $we-black
+
+      &.active::after
+        content: ''
+        position: absolute
+        bottom: -5px
+        left: 10px
+        width: 100%
+        height: 3px
+        background: url('../img/active-line.png') no-repeat
+
+    &:last-child>a
+      margin-right: 0
+
+// Top block
+.top-block
+  width: 100%
+  height: 610px
+  background: url('../img/man-bg.png') no-repeat
+  background-size: cover
+
+  .wrap
+    position: relative
+    width: 930px
+    height: 100%
+    margin: 0 auto
+    padding: 0 22px 0
+
+    #intro
+      position: absolute
+      width: 50%
+      margin: 0 auto
+      top: 135px
+      right: 22px
+      background: url('../img/label-bg.png')
+      background-size: 100% 100%
+
+      .caption
+        font-size: 38px
+        font-weight: 300
+        margin: 24px 24px 0
+
+      .line
+        display: block
+        margin: 15px auto
+        width: 92%
+
+      p
+        margin: 0 24px 85px
+
+// Second block
+.second-bloc
+  width: 100%
+
+  .wrap
+    width: 660px
+    margin: 95px auto
+
+// Yello block
+.yellow-block
+  width: 100%
+  padding-top: 85px
+  background: url('../img/yellow-bg.png')
+  background-size: 100% 100%
+  z-index: 999
+
+  .wrap
+    width: 930px
+    height: 100%
+    margin: 0 auto
+
+    h1
+      position: relative
+      text-align: center
+      margin: 0 auto 90px
+
+      &::after
+        content: ''
+        position: absolute
+        left: 70px
+        top: -30px
+        background: url('../img/stuff.png')
+        width: 194px
+        height: 100px
+
+      &::before
+        content: ''
+        position: absolute
+        right: 70px
+        top: -30px
+        background: url('../img/stuff-r.png')
+        width: 194px
+        height: 100px
+
+    .text-block
+      display: inline-block
+      width: 33%
+      padding: 0 22px
+      margin: 0 -22px 130px
+
+      h2
+        padding: 0 22px
+        margin-top: 0
+
+      p
+        margin-bottom: 5px
+
+      .meer
+        display: block
+        position: relative
+        text-decoration: none
+        text-transform: uppercase
+        margin: 0 auto
+        color: $we-black
+        text-align: center
+
+        &:hover
+          cursor: pointer
+
+        &::after
+          position: absolute
+          top: 8px
+          content: ''
+          width: 5px
+          height: 5px
+          border-top: 1px solid $we-black
+          border-right: 1px solid $we-black
+          transform: rotate(45deg)
+
+// Beige block
+.beige-block
+  position: relative
+  top: -5px
+  width: 100%
+  min-height: 420px
+  z-index: 997
+  background: url('../img/beige-bg.png')
+  background-size: 100% 100%
+
+  .wrap
+    width: 930px
+    margin: 0 auto
+    position: relative
+
+    .big-text
+      display: inline-block
+      position: relative
+      top: -85px
+      bottom: 0
+      float: left
+      background: url('../img/label-bg.png')
+      background-size: 100% 100%
+      max-width: 44%
+      padding: 0 22px
+      min-height: 400px
+      margin-right: 22px
+
+      &.right
+        float: right
+        margin-right: 0
+
+// Footer block
+.footer-block
+  width: 100%
+
+  .wrap
+    width: 660px
+    margin: 60px auto
+
+    .logo
+      display: block
+      margin: 0 auto
+      width: 138px
+      height: 57px
+
+    p
+      text-align: center
+
+    .link-wapper
+      display: block
+      width: 133px
+      margin: 0 auto
+
+      a
+        display: inline-block
+
+        img
+          display: inline-block
+
+        .fb
+          width: 57px
+          height: 57px
+          margin-right: 15px
+          background: url('../img/facebook.png')
+
+        .twitter
+          width: 57px
+          height: 57px
+          background: url('../img/twitter.png')
+
+        &:hover
+          cursor: pointer

@@ -1,4 +1,4 @@
-#NXTE test task#
+#NXTE#
 
 ### How to run ###
 
